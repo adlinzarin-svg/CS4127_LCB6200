@@ -1,0 +1,872 @@
+
+/* General page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F1E6;
+    color: #174B38;
+    line-height: 1.6;
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #FFFDF7;
+}
+
+.logo {
+    color: #174B38;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #174B38;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: 	#247447;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Homepage hero section */
+.hero {
+    min-height: 500px;
+    background-color: 	#247447;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-subtitle {
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: #F5F1E6;
+
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 55px;
+    margin-bottom: 15px;
+    color: #FFFDF7;
+}
+
+
+.hero-content p {
+    margin-bottom: 20px;
+       color: #F5F1E6;
+}
+
+.main-button {
+    display: inline-block;
+    background-color: #174B38;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.main-button:hover {
+    background-color: #405B4B;
+}
+
+/* Welcome section */
+.welcome {
+    max-width: 850px;
+    margin: auto;
+    padding: 70px 25px;
+    text-align: center;
+}
+
+.welcome h2,
+.discover h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* Discover section */
+.discover {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.section-intro {
+    margin-bottom: 30px;
+}
+
+.discover-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.discover-card {
+    background-color: #FFFDF7;
+    padding: 15px;
+    text-align: left;
+}
+
+.card-image {
+    height: 220px;
+    background-color: 	#DCE8D4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.discover-card h3 {
+    margin-bottom: 8px;
+}
+
+.discover-card p {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.discover-card a {
+    color: #405B4B;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background-color: 	#174B38;
+    color: #F9F8F4;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 40px;
+    font-size: 13px;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: 	#174B38;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        padding-top: 15px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero {
+        min-height: 350px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .discover-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome h2,
+    .discover h2 {
+        font-size: 25px;
+    }
+}
+
+
+/* Nature page banner */
+.nature-hero {
+    min-height: 400px;
+    background-color: 	#247447;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.nature-hero h1 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+/* Nature introduction */
+.nature-intro {
+    max-width: 850px;
+    margin: auto;
+    padding: 65px 25px;
+    text-align: center;
+}
+
+.nature-intro h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* Nature destination cards */
+.nature-destinations {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 5%;
+}
+
+.nature-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.nature-image {
+    min-height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+
+
+}
+
+.nature-text h2 {
+    font-family: Georgia, serif;
+    margin-bottom: 12px;
+}
+
+.nature-text p {
+    font-size: 15px;
+}
+
+/* Mobile nature layout */
+@media (max-width: 768px) {
+
+    .nature-hero {
+        min-height: 300px;
+    }
+
+    .nature-hero h1 {
+        font-size: 32px;
+    }
+
+    .nature-intro h2 {
+        font-size: 25px;
+    }
+
+    .nature-card {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .nature-image {
+        min-height: 180px;
+    }
+
+}
+
+
+
+/* Culture page banner */
+.culture-hero {
+    min-height: 400px;
+    background-color: 	#247447;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.culture-hero h1 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+/* Culture introduction */
+.culture-intro {
+    max-width: 850px;
+    margin: auto;
+    padding: 65px 25px;
+    text-align: center;
+}
+
+.culture-intro h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* Culture destination sections */
+.culture-destinations {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 5%;
+}
+
+.culture-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.culture-image {
+    min-height: 260px;
+    background-color: 	#DCE8D4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.culture-text h2 {
+    font-family: Georgia, serif;
+    margin-bottom: 12px;
+}
+
+.culture-text p {
+    font-size: 15px;
+}
+
+/* Mobile culture layout */
+@media (max-width: 768px) {
+
+    .culture-hero {
+        min-height: 300px;
+    }
+
+    .culture-hero h1 {
+        font-size: 32px;
+    }
+
+    .culture-intro h2 {
+        font-size: 25px;
+    }
+
+    .culture-card {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .culture-image {
+        min-height: 180px;
+    }
+
+}
+
+
+
+
+/* Plan your journey banner */
+.plan-hero {
+    min-height: 240px;
+    background-color: 	#247447;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.plan-hero h1 {
+    font-family: Georgia, serif;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+/* Trip planner section */
+.trip-planner {
+    max-width: 750px;
+    margin: 60px auto;
+    padding: 35px;
+    background-color: 	#FFFDF7;
+}
+
+.trip-planner h2,
+.travel-info h2 {
+    font-family: Georgia, serif;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.planner-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 25px;
+    border: none;
+}
+
+.form-group > label,
+.form-group legend {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid 	#247447;
+    background-color: white;
+    color: #263C32;
+    font-size: 14px;
+}
+
+.checkbox-option {
+    display: block;
+    margin: 12px 0;
+    font-weight: normal;
+}
+
+.checkbox-option input {
+    margin-right: 10px;
+    accent-color: 	#174B38;
+}
+
+.trip-planner button {
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Itinerary results */
+.itinerary-result {
+    margin-top: 30px;
+}
+
+.itinerary-day {
+    background-color: 	#F5F1E6;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.itinerary-day h3 {
+    margin-bottom: 8px;
+}
+
+/* Travel information */
+.travel-info {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.travel-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.travel-info-grid article:last-child {
+    grid-column: 1 / 3;
+    justify-self: center;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.travel-info-grid article {
+    border: 3px solid #247447;
+    border-radius: 8px;
+    padding: 25px;
+    background-color: #FFFDF7;
+    transition: transform 0.2s ease;
+}
+
+.travel-info-grid article:hover {
+    transform: translateY(-4px);
+}
+
+
+.travel-info-grid h3 {
+    margin-bottom: 10px;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+
+    .plan-hero {
+        min-height: 200px;
+    }
+
+    .plan-hero h1 {
+        font-size: 30px;
+    }
+
+    .trip-planner {
+        margin: 30px 15px;
+        padding: 20px;
+    }
+
+    .trip-planner h2,
+    .travel-info h2 {
+        font-size: 25px;
+    }
+
+    .travel-info-grid {
+        grid-template-columns: 1fr;
+        
+
+
+    }
+
+    
+}
+
+
+
+
+/* Events page banner */
+.events-hero {
+    min-height: 300px;
+    background-color: 	#247447;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.events-hero h1 {
+    font-family: Georgia, serif;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+/* Events section */
+.events-section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 5%;
+}
+
+.events-section > h2,
+.contact-section h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.events-intro {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+/* Event cards */
+.event-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.event-image {
+    min-height: 230px;
+    background-color: #DCE8D4;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.event-image img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.event-text h3 {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+/* Contact section */
+.contact-section {
+    max-width: 750px;
+    margin: 30px auto 60px;
+    padding: 35px;
+    background-color: 	#FFFDF7;
+}
+
+.contact-section > p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contact-group {
+    margin-bottom: 20px;
+}
+
+.contact-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.contact-group input,
+.contact-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid 	#247447;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: white;
+}
+
+.contact-group textarea {
+    resize: vertical;
+}
+
+.contact-section button {
+    border: none;
+    cursor: pointer;
+}
+
+/* Mobile events layout */
+@media (max-width: 768px) {
+
+    .events-hero {
+        min-height: 250px;
+    }
+
+    .events-hero h1 {
+        font-size: 30px;
+    }
+
+    .events-section > h2,
+    .contact-section h2 {
+        font-size: 25px;
+    }
+
+    .event-card {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .event-image {
+        min-height: 180px;
+    }
+
+    .contact-section {
+        margin: 20px 15px 40px;
+        padding: 20px;
+    }
+
+}
+
+
+
+
+/* Light text for all remaining hero sections */
+
+.nature-hero h1,
+.culture-hero h1,
+.plan-hero h1,
+.events-hero h1 {
+    color: #FFFDF7;
+}
+
+.nature-hero p,
+.culture-hero p,
+.plan-hero p,
+.events-hero p {
+    color: #F5F1E6;
+}
+
+
+
+.card-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+/* Homepage destination image layout */
+.card-image {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    display: block;
+    background-color: #DCE8D4;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Place the image label over the photograph */
+.card-image span {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgba(23, 75, 56, 0.20);
+    font-weight: bold;
+}
+
+
+
+/* Homepage horizontal destination layout */
+
+.home-discover-list {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 5%;
+}
+
+.home-discover-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.home-discover-image {
+    height: 260px;
+    padding: 12px;
+    overflow: hidden;
+    background-color: #DCE8D4;
+}
+
+.home-discover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.home-discover-text h3 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    color: #174B38;
+    margin-bottom: 12px;
+}
+
+.home-discover-text p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.home-discover-text a {
+    color: #247447;
+    font-weight: bold;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    .home-discover-card {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .home-discover-image {
+        height: 210px;
+    }
+}
+
+
+/* Nature page photographs */
+
+.nature-image {
+    min-height: 260px;
+    padding: 12px;
+    background-color: #DCE8D4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nature-image img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Culture page photographs */
+
+.culture-image {
+    overflow: hidden;
+}
+
+.culture-image img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
