@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Plan Your Journey | Brunei, Unhurried</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Website navigation -->
+    <header>
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                BRUNEI, UNHURRIED
+            </a>
+
+            <button class="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Nature</a></li>
+                <li><a href="attractions.html">Culture</a></li>
+                <li><a href="plan.html">Plan Your Journey</a></li>
+                <li><a href="events-contact.html">Events</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Main banner -->
+        <section class="plan-hero">
+            <div>
+                <p class="hero-subtitle">MAKE YOUR VISIT SPECIAL</p>
+
+                <h1>PLAN YOUR JOURNEY</h1>
+
+                <p>A little planning for a memorable visit.</p>
+            </div>
+        </section>
+
+        <!-- Interactive trip planner -->
+        <section class="trip-planner">
+
+            <h2>Build Your Own Trip</h2>
+
+            <p class="planner-intro">
+                Tell us what you enjoy and we'll suggest
+                places to explore in Brunei.
+            </p>
+
+            <form id="tripForm">
+
+                <div class="form-group">
+                    <label for="days">How many days are you visiting?</label>
+
+                    <select id="days" name="days" required>
+                        <option value="">Select number of days</option>
+                        <option value="1">1 day</option>
+                        <option value="2">2 days</option>
+                        <option value="3">3 days</option>
+                        <option value="4">4 days</option>
+                        <option value="5">5 days</option>
+                    </select>
+                </div>
+
+                <fieldset class="form-group">
+                    <legend>What are you interested in?</legend>
+
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="interest" value="nature">
+                        Nature
+                    </label>
+
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="interest" value="culture">
+                        Culture
+                    </label>
+
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="interest" value="food">
+                        Food
+                    </label>
+
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="interest" value="adventure">
+                        Adventure
+                    </label>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="pace">What pace do you prefer?</label>
+
+                    <select id="pace" name="pace" required>
+                        <option value="">Select your preferred pace</option>
+                        <option value="relaxed">Relaxed</option>
+                        <option value="balanced">Balanced</option>
+                        <option value="active">Active</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="main-button">
+                    Generate My Itinerary
+                </button>
+
+            </form>
+
+            <!-- Suggested itinerary will appear here -->
+            <div id="itineraryResult" class="itinerary-result"
+                aria-live="polite">
+
+            </div>
+
+        </section>
+
+        <!-- Practical travel information -->
+        <section class="travel-info">
+
+            <h2>Travel Information</h2>
+
+            <div class="travel-info-grid">
+
+                <article>
+    <h3>Getting Here</h3>
+    <p>
+        Brunei can be reached by air through Brunei
+        International Airport. Visitors can find flights
+        connecting Bandar Seri Begawan with destinations
+        across Asia and beyond.
+    </p>
+    <a href="https://www.flyroyalbrunei.com/"
+       target="_blank" rel="noopener noreferrer">
+        Explore Royal Brunei Airlines
+    </a>
+</article>
+<article>
+    <h3>Getting Around</h3>
+    <p>
+        Visitors can explore Brunei using taxis, buses
+        and water taxis. Water taxis are especially useful
+        for travelling between Bandar Seri Begawan and
+        Kampong Ayer.
+    </p>
+</article>
+
+                <article>
+    <h3>Visa Information</h3>
+    <p>
+        Entry requirements depend on your nationality.
+        Check the latest visa and immigration information
+        before travelling to Brunei.
+    </p>
+    <a href="https://www.immigration.gov.bn/"
+       target="_blank" rel="noopener noreferrer">
+        Brunei Immigration Department
+    </a>
+</article>
+<article>
+    <h3>Accommodation</h3>
+    <p>
+        Visitors can choose from hotels, serviced
+        apartments and guesthouses. Staying near
+        Bandar Seri Begawan provides convenient access
+        to many attractions.
+    </p>
+</article>
+
+               <article>
+    <h3>Best Time to Visit</h3>
+    <p>
+        Brunei has a tropical climate throughout the year.
+        Visitors should prepare for warm temperatures,
+        humidity and occasional rainfall when planning
+        outdoor activities.
+    </p>
+</article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Website footer -->
+    <footer class="footer">
+
+        <p>BRUNEI, UNHURRIED</p>
+
+        <p>Discover nature, culture and the beauty of Brunei.</p>
+
+        <p>&copy; 2026 Brunei, Unhurried. All rights reserved.</p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
